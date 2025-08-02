@@ -1,0 +1,37 @@
+.about-section {
+  background-color: #1abc9c;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+.about-title {
+  font-size: 2.7rem;
+  letter-spacing: 2px;
+  color: #fff;
+}
+.about-divider .line {
+  width: 70px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 2px;
+  display: inline-block;
+}
+.about-divider .star {
+  color: #fff;
+  font-size: 1.7rem;
+  vertical-align: middle;
+}
+.about-content {
+  margin-top: 10px;
+}
+.about-content .col-md-4 {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+@media (max-width: 991px) {
+  .about-content .col-md-4 {
+    text-align: center;
+  }
+}

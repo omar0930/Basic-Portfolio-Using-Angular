@@ -1,0 +1,83 @@
+.portfolio-section {
+  background: #fff;
+  min-height: 100vh;
+}
+.portfolio-title {
+  color: #2c3e50;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+.portfolio-divider .line {
+  width: 70px;
+  height: 5px;
+  background-color: #2c3e50;
+  border-radius: 2px;
+  display: inline-block;
+}
+.portfolio-divider .star {
+  color: #2c3e50;
+  font-size: 1.7rem;
+  vertical-align: middle;
+}
+.portfolio-card {
+  width: 260px;
+  height: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: filter 0.2s, transform 0.18s;
+}
+.portfolio-card:hover {
+  filter: brightness(0.95);
+  transform: scale(1.04);
+  box-shadow: 0 8px 30px #aaa4;
+}
+.portfolio-img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 100%;
+  background: transparent;
+  user-select: none;
+  pointer-events: none;
+}
+.portfolio-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #245088cc;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.22s;
+}
+.portfolio-modal-content {
+  background: #24acc2;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 0 30px #0004;
+  max-width: 440px;
+  max-height: 440px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-img {
+  width: 300px;
+  max-width: 80vw;
+  max-height: 60vh;
+  border-radius: 20px;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
